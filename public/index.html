@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="notplayer is a Music player. You can drop your mp3 files on the screen. Or you can listen to free music by pressing 't'">
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <title>notplayer</title>
+  <style>
+    body {
+      overflow: hidden;
+      margin: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="module" src="bundle.js"></script>
+  <div id="overlay">
+    <div id="overlay-content">
+      <h2>notplayer</h2>
+      <p>drag and drop your mp3 files. Or you could press 't' to listen to free music</p>
+    </div>
+  </div>
+  <div id="info">
+    <div id="info-content">
+    </div>
+  </div>
+  <div id="container"></div>
+  <div id="player"></div>
+</body>
+
+</html>
