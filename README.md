@@ -13,6 +13,13 @@ npm i
 npm run dev
 ```
 
+### Run the server
+```bash
+npm run build:server
+npm run start
+```
+
+
 ### Build for production in the dist/ directory
 ```bash
 npm run build
