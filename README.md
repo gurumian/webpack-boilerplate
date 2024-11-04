@@ -1,4 +1,4 @@
-# notplayer
+# webpack-boilerplate
 npm + typescript + webpack
 
 ## Quick guide
@@ -32,11 +32,11 @@ npm run pack
 ```
 
 ```bash
-sudo snap install ./notplayer_1.0.0_amd64.snap --dangerous --devmode
+sudo snap install ./webpack-boilerplate_1.0.0_amd64.snap --dangerous --devmode
 ```
 
 ```bash
-snap run --shell notplayer
+snap run --shell webpack-boilerplate
 
 node --version
 # check if it's v20.9.0
@@ -49,6 +49,6 @@ node --version
 
 ## media files
 ```bash
-mkdir -p /var/snap/notplayer/x1/media
+mkdir -p /var/snap/webpack-boilerplate/x1/media
 ```
 and copy mp3 files in the above directory.
