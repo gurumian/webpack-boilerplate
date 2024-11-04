@@ -5,8 +5,6 @@ import { Control } from '../control';
 import { ViewPart } from '../view_part';
 
 export class DefaultViewPart extends ViewPart {
-  mux?: MediaStream
-  _enable_record: boolean = false
 
   constructor(public control: Control) {
     let rest = new RestClient(`http://localhost:10100`)
