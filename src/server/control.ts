@@ -100,7 +100,7 @@ export class Control {
     })
 
     app.get('/audio', (req: any, res: any) => {
-      console.log('[GET] audio!!!!')
+      console.log('[GET] audio!')
       res.json({
         result: 'ok',
         data: this.audio_files

@@ -1,9 +1,9 @@
 {
   "name": "webpack-boilerplate",
-  "version": "1.0.7",
+  "version": "0.0.1",
   "description": "simple player using threejs",
   "scripts": {
-    "dev-server": "webpack serve --config ./src/server/webpack.dev.js",
+    "dev:server": "webpack serve --config ./src/server/webpack.dev.js",
     "build:server": "webpack --config ./src/server/webpack.prod.js",
     "build:client": "webpack --config ./src/client/webpack.prod.js",
     "build": "npm run build:client && npm run build:server",
