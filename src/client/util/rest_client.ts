@@ -5,16 +5,18 @@ export class RestClient extends EventEmitter {
   constructor(public url?: string, public port?: number) {
     super()
 
-    if(!port) {
-      port = 10101
-    }
-    this.port = port
+    // if(!port) {
+    //   port = 10101
+    // }
+    // this.port = port
     
     // const port = 10090
     // note that 10089 - /tibot/
     // refer to `/etc/nginx/site-available/default`
     // console.log(`${window.location.protocol}//${window.location.hostname}/tibot/`)
     let protocol = window.location.protocol || 'http:'
+
+    console.log(`port: ${window.location.port}`)
     console.log(`protocol ${protocol}`)
     if(!url) {
       console.log(window.location.hostname)
@@ -25,7 +27,7 @@ export class RestClient extends EventEmitter {
         url = `${protocol}//${window.location.hostname}`
       }
       else {
-        url = `${protocol}//${window.location.hostname}:${port}`
+        url = `${protocol}//${window.location.hostname}:${window.location.port}`
       }
       
       console.log(url)

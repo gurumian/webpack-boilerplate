@@ -40,7 +40,7 @@ function loadConfig(path: string) {
     console.log('no file!')
     fs.writeFileSync(path, JSON.stringify({
       uuid: uuid,
-      port: 10100,
+      port: 20100,
       rootdir: rootdir,
       logpath: `${appname}.db`
     }, null, 2));

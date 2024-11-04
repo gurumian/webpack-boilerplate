@@ -7,12 +7,12 @@ import { ViewPart } from '../view_part';
 export class DefaultViewPart extends ViewPart {
 
   constructor(public control: Control) {
-    let rest = new RestClient(`http://localhost:10100`)
-    console.log(rest)
     super(control)
   }
 
   async init(): Promise<void> {
+    let rest = new RestClient()
+    console.log(rest)
     return super.init()
   }
 
